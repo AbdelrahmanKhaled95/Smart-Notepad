@@ -1,0 +1,6 @@
+framework module Pods_SmartNotepad_SmartNotepadUITests {
+  umbrella header "Pods-SmartNotepad-SmartNotepadUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
