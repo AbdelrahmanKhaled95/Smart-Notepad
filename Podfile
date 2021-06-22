@@ -4,7 +4,7 @@ platform :ios, '14.5'
 target 'SmartNotepad' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'RealmSwift'
+  pod 'RealmSwift', '10.5.2'
   # Pods for SmartNotepad
 
   target 'SmartNotepadTests' do
