@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B03503C267E5C0C00131E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03503B267E5C0C00131E43 /* AppDelegate.swift */; };
+		2B03503E267E5C0C00131E43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03503D267E5C0C00131E43 /* SceneDelegate.swift */; };
+		2B035043267E5C0C00131E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B035041267E5C0C00131E43 /* Main.storyboard */; };
+		2B035045267E5C1000131E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B035044267E5C1000131E43 /* Assets.xcassets */; };
+		2B035048267E5C1000131E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B035046267E5C1000131E43 /* LaunchScreen.storyboard */; };
+		2B035053267E5C1000131E43 /* SmartNotepadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035052267E5C1000131E43 /* SmartNotepadTests.swift */; };
+		2B03505E267E5C1000131E43 /* SmartNotepadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03505D267E5C1000131E43 /* SmartNotepadUITests.swift */; };
+		2B035072267E5EA000131E43 /* NoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035070267E5EA000131E43 /* NoteListCell.swift */; };
+		2B035073267E5EA000131E43 /* NoteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B035071267E5EA000131E43 /* NoteListCell.xib */; };
+		2B035080267E6C1A00131E43 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03507F267E6C1A00131E43 /* Note.swift */; };
+		2B035082267E721F00131E43 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035081267E721F00131E43 /* NoteListViewController.swift */; };
+		2B035087267E859C00131E43 /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035086267E859C00131E43 /* GenericTableView.swift */; };
+		2B035089267E85C800131E43 /* GenericTableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035088267E85C800131E43 /* GenericTableView+Extension.swift */; };
+		2B03508C267E875000131E43 /* NoteListVC+GenericTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03508B267E875000131E43 /* NoteListVC+GenericTableViewExtension.swift */; };
+		2B03508F267E87A600131E43 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03508E267E87A600131E43 /* NoteListViewModel.swift */; };
+		2B035091267E885E00131E43 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035090267E885E00131E43 /* ViewState.swift */; };
+		2B035093267E88C000131E43 /* NoteListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035092267E88C000131E43 /* NoteListCellViewModel.swift */; };
+		2B035095267E8D1900131E43 /* NoteListVC+BindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035094267E8D1900131E43 /* NoteListVC+BindingExtension.swift */; };
+		2B035097267E8E3F00131E43 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B035096267E8E3F00131E43 /* BaseViewController.swift */; };
+		2B03509F267F2BFE00131E43 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B03509E267F2BFE00131E43 /* NoteDetailsViewController.swift */; };
+		2B0350A3267F2C4A00131E43 /* NoteDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0350A2267F2C4A00131E43 /* NoteDetails.storyboard */; };
+		2B0350A8267F503700131E43 /* NoteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0350A7267F503700131E43 /* NoteDetailsViewModel.swift */; };
+		2B0350AA267F523B00131E43 /* NoteDetailsVC+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0350A9267F523B00131E43 /* NoteDetailsVC+Binding.swift */; };
+		2B0350AE267F5C5600131E43 /* NoteDetailsVC+UIImagePickerVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0350AD267F5C5600131E43 /* NoteDetailsVC+UIImagePickerVCExtension.swift */; };
+		2B0350B0267F868600131E43 /* NoteDetailsVC+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0350AF267F868600131E43 /* NoteDetailsVC+UITextViewDelegate.swift */; };
+		2B0350B4267FA5C500131E43 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0350B3267FA5C500131E43 /* String+Extension.swift */; };
+		2B0350B626810EA800131E43 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0350B526810EA800131E43 /* BaseViewModel.swift */; };
+		5FDD4C604EB4B49AD476BF34 /* Pods_SmartNotepadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD68778FA673C5963B1D6BE /* Pods_SmartNotepadTests.framework */; };
+		92E0525D2FA4E49643A56B5F /* Pods_SmartNotepad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756C6BD3E0824CE405DBD2AE /* Pods_SmartNotepad.framework */; };
+		FC8F16DA50C1E776563C69D2 /* Pods_SmartNotepad_SmartNotepadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427CA0981BC3BA2270F30FFF /* Pods_SmartNotepad_SmartNotepadUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B03504F267E5C1000131E43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B035030267E5C0B00131E43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B035037267E5C0B00131E43;
+			remoteInfo = SmartNotepad;
+		};
+		2B03505A267E5C1000131E43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B035030267E5C0B00131E43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B035037267E5C0B00131E43;
+			remoteInfo = SmartNotepad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02BDF276EFB331CA6494A3E5 /* Pods-SmartNotepadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotepadTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartNotepadTests/Pods-SmartNotepadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B035038267E5C0B00131E43 /* SmartNotepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartNotepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B03503B267E5C0C00131E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B03503D267E5C0C00131E43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2B035042267E5C0C00131E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B035044267E5C1000131E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B035047267E5C1000131E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B035049267E5C1000131E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B03504E267E5C1000131E43 /* SmartNotepadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartNotepadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B035052267E5C1000131E43 /* SmartNotepadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartNotepadTests.swift; sourceTree = "<group>"; };
+		2B035054267E5C1000131E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B035059267E5C1000131E43 /* SmartNotepadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartNotepadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B03505D267E5C1000131E43 /* SmartNotepadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartNotepadUITests.swift; sourceTree = "<group>"; };
+		2B03505F267E5C1000131E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B035070267E5EA000131E43 /* NoteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListCell.swift; sourceTree = SOURCE_ROOT; };
+		2B035071267E5EA000131E43 /* NoteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteListCell.xib; sourceTree = SOURCE_ROOT; };
+		2B03507F267E6C1A00131E43 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		2B035081267E721F00131E43 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		2B035086267E859C00131E43 /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
+		2B035088267E85C800131E43 /* GenericTableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenericTableView+Extension.swift"; sourceTree = "<group>"; };
+		2B03508B267E875000131E43 /* NoteListVC+GenericTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteListVC+GenericTableViewExtension.swift"; sourceTree = "<group>"; };
+		2B03508E267E87A600131E43 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		2B035090267E885E00131E43 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		2B035092267E88C000131E43 /* NoteListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListCellViewModel.swift; sourceTree = "<group>"; };
+		2B035094267E8D1900131E43 /* NoteListVC+BindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteListVC+BindingExtension.swift"; sourceTree = "<group>"; };
+		2B035096267E8E3F00131E43 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2B03509E267F2BFE00131E43 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
+		2B0350A2267F2C4A00131E43 /* NoteDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoteDetails.storyboard; sourceTree = "<group>"; };
+		2B0350A7267F503700131E43 /* NoteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewModel.swift; sourceTree = "<group>"; };
+		2B0350A9267F523B00131E43 /* NoteDetailsVC+Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailsVC+Binding.swift"; sourceTree = "<group>"; };
+		2B0350AD267F5C5600131E43 /* NoteDetailsVC+UIImagePickerVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailsVC+UIImagePickerVCExtension.swift"; sourceTree = "<group>"; };
+		2B0350AF267F868600131E43 /* NoteDetailsVC+UITextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailsVC+UITextViewDelegate.swift"; sourceTree = "<group>"; };
+		2B0350B3267FA5C500131E43 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2B0350B526810EA800131E43 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		427CA0981BC3BA2270F30FFF /* Pods_SmartNotepad_SmartNotepadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartNotepad_SmartNotepadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		575CA279EE69C6E264634DEF /* Pods-SmartNotepad-SmartNotepadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotepad-SmartNotepadUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartNotepad-SmartNotepadUITests/Pods-SmartNotepad-SmartNotepadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		756C6BD3E0824CE405DBD2AE /* Pods_SmartNotepad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartNotepad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811685211C5D9C8C1C69414E /* Pods-SmartNotepad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotepad.debug.xcconfig"; path = "Target Support Files/Pods-SmartNotepad/Pods-SmartNotepad.debug.xcconfig"; sourceTree = "<group>"; };
+		ACD68778FA673C5963B1D6BE /* Pods_SmartNotepadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartNotepadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06D719201A529A33658C063 /* Pods-SmartNotepad-SmartNotepadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotepad-SmartNotepadUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartNotepad-SmartNotepadUITests/Pods-SmartNotepad-SmartNotepadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C68168C303BAECB2B4C88ACF /* Pods-SmartNotepad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotepad.release.xcconfig"; path = "Target Support Files/Pods-SmartNotepad/Pods-SmartNotepad.release.xcconfig"; sourceTree = "<group>"; };
+		D79BAEE9BDDB1253EEE98904 /* Pods-SmartNotepadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotepadTests.release.xcconfig"; path = "Target Support Files/Pods-SmartNotepadTests/Pods-SmartNotepadTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B035035267E5C0B00131E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E0525D2FA4E49643A56B5F /* Pods_SmartNotepad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B03504B267E5C1000131E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDD4C604EB4B49AD476BF34 /* Pods_SmartNotepadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B035056267E5C1000131E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8F16DA50C1E776563C69D2 /* Pods_SmartNotepad_SmartNotepadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B03502F267E5C0B00131E43 = {
+			isa = PBXGroup;
+			children = (
+				2B03503A267E5C0B00131E43 /* SmartNotepad */,
+				2B035051267E5C1000131E43 /* SmartNotepadTests */,
+				2B03505C267E5C1000131E43 /* SmartNotepadUITests */,
+				2B035039267E5C0B00131E43 /* Products */,
+				500FACE4D9B544BA6643E1F5 /* Pods */,
+				3486E9BBC830B7E14BF83CF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B035039267E5C0B00131E43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B035038267E5C0B00131E43 /* SmartNotepad.app */,
+				2B03504E267E5C1000131E43 /* SmartNotepadTests.xctest */,
+				2B035059267E5C1000131E43 /* SmartNotepadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B03503A267E5C0B00131E43 /* SmartNotepad */ = {
+			isa = PBXGroup;
+			children = (
+				2B035085267E858A00131E43 /* Generics */,
+				2B035074267E641600131E43 /* Extensions */,
+				2B03506C267E5E1100131E43 /* Core Delegates */,
+				2B03506D267E5E5100131E43 /* NoteList */,
+				2B03509B267F2BBA00131E43 /* NoteDetails */,
+				2B03506B267E5DE800131E43 /* Resources */,
+				2B035046267E5C1000131E43 /* LaunchScreen.storyboard */,
+				2B035096267E8E3F00131E43 /* BaseViewController.swift */,
+				2B0350B526810EA800131E43 /* BaseViewModel.swift */,
+			);
+			path = SmartNotepad;
+			sourceTree = "<group>";
+		};
+		2B035051267E5C1000131E43 /* SmartNotepadTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B035052267E5C1000131E43 /* SmartNotepadTests.swift */,
+				2B035054267E5C1000131E43 /* Info.plist */,
+			);
+			path = SmartNotepadTests;
+			sourceTree = "<group>";
+		};
+		2B03505C267E5C1000131E43 /* SmartNotepadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B03505D267E5C1000131E43 /* SmartNotepadUITests.swift */,
+				2B03505F267E5C1000131E43 /* Info.plist */,
+			);
+			path = SmartNotepadUITests;
+			sourceTree = "<group>";
+		};
+		2B03506B267E5DE800131E43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B035044267E5C1000131E43 /* Assets.xcassets */,
+				2B035049267E5C1000131E43 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2B03506C267E5E1100131E43 /* Core Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2B03503B267E5C0C00131E43 /* AppDelegate.swift */,
+				2B03503D267E5C0C00131E43 /* SceneDelegate.swift */,
+			);
+			path = "Core Delegates";
+			sourceTree = "<group>";
+		};
+		2B03506D267E5E5100131E43 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				2B03508D267E879400131E43 /* ViewModel */,
+				2B03507E267E6C0000131E43 /* Model */,
+				2B03506E267E5E6900131E43 /* View */,
+			);
+			path = NoteList;
+			sourceTree = "<group>";
+		};
+		2B03506E267E5E6900131E43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B03506F267E5E7900131E43 /* NoteListCell */,
+				2B0350A0267F2C2600131E43 /* Storyboard */,
+				2B03508A267E872900131E43 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B03506F267E5E7900131E43 /* NoteListCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B035070267E5EA000131E43 /* NoteListCell.swift */,
+				2B035071267E5EA000131E43 /* NoteListCell.xib */,
+			);
+			path = NoteListCell;
+			sourceTree = "<group>";
+		};
+		2B035074267E641600131E43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B035088267E85C800131E43 /* GenericTableView+Extension.swift */,
+				2B0350B3267FA5C500131E43 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B03507E267E6C0000131E43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B03507F267E6C1A00131E43 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B035085267E858A00131E43 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				2B035086267E859C00131E43 /* GenericTableView.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		2B03508A267E872900131E43 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B035081267E721F00131E43 /* NoteListViewController.swift */,
+				2B03508B267E875000131E43 /* NoteListVC+GenericTableViewExtension.swift */,
+				2B035094267E8D1900131E43 /* NoteListVC+BindingExtension.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2B03508D267E879400131E43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B03508E267E87A600131E43 /* NoteListViewModel.swift */,
+				2B035090267E885E00131E43 /* ViewState.swift */,
+				2B035092267E88C000131E43 /* NoteListCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2B03509B267F2BBA00131E43 /* NoteDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2B0350A6267F502700131E43 /* ViewModel */,
+				2B03509C267F2BD100131E43 /* View */,
+			);
+			path = NoteDetails;
+			sourceTree = "<group>";
+		};
+		2B03509C267F2BD100131E43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B0350A1267F2C3A00131E43 /* Storyboard */,
+				2B03509D267F2BE100131E43 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B03509D267F2BE100131E43 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B03509E267F2BFE00131E43 /* NoteDetailsViewController.swift */,
+				2B0350A9267F523B00131E43 /* NoteDetailsVC+Binding.swift */,
+				2B0350AD267F5C5600131E43 /* NoteDetailsVC+UIImagePickerVCExtension.swift */,
+				2B0350AF267F868600131E43 /* NoteDetailsVC+UITextViewDelegate.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2B0350A0267F2C2600131E43 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2B035041267E5C0C00131E43 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2B0350A1267F2C3A00131E43 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2B0350A2267F2C4A00131E43 /* NoteDetails.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2B0350A6267F502700131E43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B0350A7267F503700131E43 /* NoteDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3486E9BBC830B7E14BF83CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				756C6BD3E0824CE405DBD2AE /* Pods_SmartNotepad.framework */,
+				427CA0981BC3BA2270F30FFF /* Pods_SmartNotepad_SmartNotepadUITests.framework */,
+				ACD68778FA673C5963B1D6BE /* Pods_SmartNotepadTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		500FACE4D9B544BA6643E1F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				811685211C5D9C8C1C69414E /* Pods-SmartNotepad.debug.xcconfig */,
+				C68168C303BAECB2B4C88ACF /* Pods-SmartNotepad.release.xcconfig */,
+				575CA279EE69C6E264634DEF /* Pods-SmartNotepad-SmartNotepadUITests.debug.xcconfig */,
+				B06D719201A529A33658C063 /* Pods-SmartNotepad-SmartNotepadUITests.release.xcconfig */,
+				02BDF276EFB331CA6494A3E5 /* Pods-SmartNotepadTests.debug.xcconfig */,
+				D79BAEE9BDDB1253EEE98904 /* Pods-SmartNotepadTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B035037267E5C0B00131E43 /* SmartNotepad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B035062267E5C1100131E43 /* Build configuration list for PBXNativeTarget "SmartNotepad" */;
+			buildPhases = (
+				68845C5D68AAB33EAAE07F49 /* [CP] Check Pods Manifest.lock */,
+				2B035034267E5C0B00131E43 /* Sources */,
+				2B035035267E5C0B00131E43 /* Frameworks */,
+				2B035036267E5C0B00131E43 /* Resources */,
+				F3B0562B5D4A866018924C97 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartNotepad;
+			productName = SmartNotepad;
+			productReference = 2B035038267E5C0B00131E43 /* SmartNotepad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B03504D267E5C1000131E43 /* SmartNotepadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B035065267E5C1100131E43 /* Build configuration list for PBXNativeTarget "SmartNotepadTests" */;
+			buildPhases = (
+				B163D13ED1F03BB39AB3E6FD /* [CP] Check Pods Manifest.lock */,
+				2B03504A267E5C1000131E43 /* Sources */,
+				2B03504B267E5C1000131E43 /* Frameworks */,
+				2B03504C267E5C1000131E43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B035050267E5C1000131E43 /* PBXTargetDependency */,
+			);
+			name = SmartNotepadTests;
+			productName = SmartNotepadTests;
+			productReference = 2B03504E267E5C1000131E43 /* SmartNotepadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B035058267E5C1000131E43 /* SmartNotepadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B035068267E5C1100131E43 /* Build configuration list for PBXNativeTarget "SmartNotepadUITests" */;
+			buildPhases = (
+				5218B1431EFA72E607EB0C9E /* [CP] Check Pods Manifest.lock */,
+				2B035055267E5C1000131E43 /* Sources */,
+				2B035056267E5C1000131E43 /* Frameworks */,
+				2B035057267E5C1000131E43 /* Resources */,
+				595B95B4F17AD6CCAFCADE4F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B03505B267E5C1000131E43 /* PBXTargetDependency */,
+			);
+			name = SmartNotepadUITests;
+			productName = SmartNotepadUITests;
+			productReference = 2B035059267E5C1000131E43 /* SmartNotepadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B035030267E5C0B00131E43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2B035037267E5C0B00131E43 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					2B03504D267E5C1000131E43 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 2B035037267E5C0B00131E43;
+					};
+					2B035058267E5C1000131E43 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 2B035037267E5C0B00131E43;
+					};
+				};
+			};
+			buildConfigurationList = 2B035033267E5C0B00131E43 /* Build configuration list for PBXProject "SmartNotepad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B03502F267E5C0B00131E43;
+			productRefGroup = 2B035039267E5C0B00131E43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B035037267E5C0B00131E43 /* SmartNotepad */,
+				2B03504D267E5C1000131E43 /* SmartNotepadTests */,
+				2B035058267E5C1000131E43 /* SmartNotepadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B035036267E5C0B00131E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0350A3267F2C4A00131E43 /* NoteDetails.storyboard in Resources */,
+				2B035048267E5C1000131E43 /* LaunchScreen.storyboard in Resources */,
+				2B035045267E5C1000131E43 /* Assets.xcassets in Resources */,
+				2B035043267E5C0C00131E43 /* Main.storyboard in Resources */,
+				2B035073267E5EA000131E43 /* NoteListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B03504C267E5C1000131E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B035057267E5C1000131E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5218B1431EFA72E607EB0C9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartNotepad-SmartNotepadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		595B95B4F17AD6CCAFCADE4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartNotepad-SmartNotepadUITests/Pods-SmartNotepad-SmartNotepadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartNotepad-SmartNotepadUITests/Pods-SmartNotepad-SmartNotepadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartNotepad-SmartNotepadUITests/Pods-SmartNotepad-SmartNotepadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68845C5D68AAB33EAAE07F49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartNotepad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B163D13ED1F03BB39AB3E6FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartNotepadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B0562B5D4A866018924C97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartNotepad/Pods-SmartNotepad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartNotepad/Pods-SmartNotepad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartNotepad/Pods-SmartNotepad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B035034267E5C0B00131E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B035080267E6C1A00131E43 /* Note.swift in Sources */,
+				2B0350B626810EA800131E43 /* BaseViewModel.swift in Sources */,
+				2B035089267E85C800131E43 /* GenericTableView+Extension.swift in Sources */,
+				2B0350A8267F503700131E43 /* NoteDetailsViewModel.swift in Sources */,
+				2B035091267E885E00131E43 /* ViewState.swift in Sources */,
+				2B035087267E859C00131E43 /* GenericTableView.swift in Sources */,
+				2B035095267E8D1900131E43 /* NoteListVC+BindingExtension.swift in Sources */,
+				2B035097267E8E3F00131E43 /* BaseViewController.swift in Sources */,
+				2B03503C267E5C0C00131E43 /* AppDelegate.swift in Sources */,
+				2B0350B4267FA5C500131E43 /* String+Extension.swift in Sources */,
+				2B0350AE267F5C5600131E43 /* NoteDetailsVC+UIImagePickerVCExtension.swift in Sources */,
+				2B035082267E721F00131E43 /* NoteListViewController.swift in Sources */,
+				2B03509F267F2BFE00131E43 /* NoteDetailsViewController.swift in Sources */,
+				2B035093267E88C000131E43 /* NoteListCellViewModel.swift in Sources */,
+				2B035072267E5EA000131E43 /* NoteListCell.swift in Sources */,
+				2B0350AA267F523B00131E43 /* NoteDetailsVC+Binding.swift in Sources */,
+				2B03508C267E875000131E43 /* NoteListVC+GenericTableViewExtension.swift in Sources */,
+				2B0350B0267F868600131E43 /* NoteDetailsVC+UITextViewDelegate.swift in Sources */,
+				2B03508F267E87A600131E43 /* NoteListViewModel.swift in Sources */,
+				2B03503E267E5C0C00131E43 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B03504A267E5C1000131E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B035053267E5C1000131E43 /* SmartNotepadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B035055267E5C1000131E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B03505E267E5C1000131E43 /* SmartNotepadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B035050267E5C1000131E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B035037267E5C0B00131E43 /* SmartNotepad */;
+			targetProxy = 2B03504F267E5C1000131E43 /* PBXContainerItemProxy */;
+		};
+		2B03505B267E5C1000131E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B035037267E5C0B00131E43 /* SmartNotepad */;
+			targetProxy = 2B03505A267E5C1000131E43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B035041267E5C0C00131E43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B035042267E5C0C00131E43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B035046267E5C1000131E43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B035047267E5C1000131E43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B035060267E5C1100131E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
+			};
+			name = Debug;
+		};
+		2B035061267E5C1100131E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B035063267E5C1100131E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811685211C5D9C8C1C69414E /* Pods-SmartNotepad.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartNotepad/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdo.SmartNotepad.SmartNotepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B035064267E5C1100131E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C68168C303BAECB2B4C88ACF /* Pods-SmartNotepad.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartNotepad/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdo.SmartNotepad.SmartNotepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B035066267E5C1100131E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BDF276EFB331CA6494A3E5 /* Pods-SmartNotepadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartNotepadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdo.SmartNotepad.SmartNotepadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartNotepad.app/SmartNotepad";
+			};
+			name = Debug;
+		};
+		2B035067267E5C1100131E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79BAEE9BDDB1253EEE98904 /* Pods-SmartNotepadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartNotepadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdo.SmartNotepad.SmartNotepadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartNotepad.app/SmartNotepad";
+			};
+			name = Release;
+		};
+		2B035069267E5C1100131E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575CA279EE69C6E264634DEF /* Pods-SmartNotepad-SmartNotepadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartNotepadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdo.SmartNotepad.SmartNotepadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartNotepad;
+			};
+			name = Debug;
+		};
+		2B03506A267E5C1100131E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06D719201A529A33658C063 /* Pods-SmartNotepad-SmartNotepadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartNotepadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abdo.SmartNotepad.SmartNotepadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartNotepad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B035033267E5C0B00131E43 /* Build configuration list for PBXProject "SmartNotepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B035060267E5C1100131E43 /* Debug */,
+				2B035061267E5C1100131E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B035062267E5C1100131E43 /* Build configuration list for PBXNativeTarget "SmartNotepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B035063267E5C1100131E43 /* Debug */,
+				2B035064267E5C1100131E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B035065267E5C1100131E43 /* Build configuration list for PBXNativeTarget "SmartNotepadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B035066267E5C1100131E43 /* Debug */,
+				2B035067267E5C1100131E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B035068267E5C1100131E43 /* Build configuration list for PBXNativeTarget "SmartNotepadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B035069267E5C1100131E43 /* Debug */,
+				2B03506A267E5C1100131E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B035030267E5C0B00131E43 /* Project object */;
+}
