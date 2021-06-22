@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteListCell" rowHeight="68" id="KGk-i7-Jjw" customClass="NoteListCell" customModule="SmartNotepad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="2EX-Fq-yyY">
+                        <rect key="frame" x="20" y="12" width="83.5" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Note title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nol-oe-hCY">
+                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Note body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF6-Uk-rwV">
+                                <rect key="frame" x="0.0" y="26" width="83.5" height="18"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="opi-mL-FrB">
+                        <rect key="frame" x="198" y="19" width="136" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkF-5k-Ekw">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <color key="highlightedColor" systemColor="systemGreenColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mz4-wO-6w1">
+                                <rect key="frame" x="68" y="0.5" width="30" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="m2y-RB-lP2"/>
+                                    <constraint firstAttribute="width" constant="30" id="sSL-Vr-lxc"/>
+                                </constraints>
+                                <imageReference key="image" image="mappin.circle" catalog="system" renderingMode="template"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-nQ-W5q">
+                                <rect key="frame" x="106" y="1" width="30" height="27.5"/>
+                                <color key="tintColor" red="0.73725490196078436" green="0.70588235294117641" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="NHu-yx-dZM"/>
+                                    <constraint firstAttribute="height" constant="30" id="bUv-Iv-omi"/>
+                                </constraints>
+                                <imageReference key="image" image="photo" catalog="system" symbolScale="default" renderingMode="template"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2EX-Fq-yyY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KH9-KS-kJ1"/>
+                    <constraint firstItem="2EX-Fq-yyY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YPl-UR-L6x"/>
+                    <constraint firstAttribute="bottom" secondItem="2EX-Fq-yyY" secondAttribute="bottom" constant="12" id="ahI-qx-wXV"/>
+                    <constraint firstItem="opi-mL-FrB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cuQ-El-4cM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="opi-mL-FrB" secondAttribute="trailing" id="drQ-dO-nkE"/>
+                    <constraint firstItem="2EX-Fq-yyY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="hV5-8n-Rau"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bodyLabel" destination="nF6-Uk-rwV" id="Evw-II-A2W"/>
+                <outlet property="locationImage" destination="Mz4-wO-6w1" id="Nxb-qQ-Yov"/>
+                <outlet property="locationLabel" destination="XkF-5k-Ekw" id="C3s-uE-e1x"/>
+                <outlet property="photoImage" destination="lOX-nQ-W5q" id="x56-3a-wTY"/>
+                <outlet property="titleLabel" destination="Nol-oe-hCY" id="J7L-Pp-7Gd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
